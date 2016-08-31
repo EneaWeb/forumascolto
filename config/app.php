@@ -171,8 +171,6 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Mews\Purifier\PurifierServiceProvider::class,
-        Laravel\Scout\ScoutServiceProvider::class,
 
         /*
          * Application Service Providers...
