@@ -31,14 +31,17 @@
                                    <br>
                                    <div class="">
                                         <img id="blah" src="/uploads/proposals/{!!$proposal->picture!!}" alt="your image" style="float: left; width:30%; margin-right: 4%; margin-bottom: 2%; border: 1px solid #009fdc;  padding: 10px;"/>
-                                        <h3 style="text-transform:uppercase">{!!$proposal->title!!}</h3>
+                                        <a href="/proposta/{!!$proposal->id!!}"><h3 style="text-transform:uppercase">{!!$proposal->title!!}</h3></a>
                                         <a href="/area/{!!$proposal->type->id!!}"># {!!$proposal->type->name!!}</a> &nbsp; 
                                         <a href="/tag/{!!$proposal->subtype->id!!}"># {!!$proposal->subtype->name!!}</a>
                                         <i style="color:#969696">- {!!\Carbon\Carbon::parse($proposal->created_at)->format('d-m-Y')!!}</i>
-                                        <br><br>
+                                        <br>
+                                        <i class="fa fa-star" style="color:#F6DF42; margin-top:-3px"></i>
+                                        <little style="color:#969696; font-size:1em"><strong id="likes-number">{!!$proposal->likes!!}</strong> preferenze</little><br>
+                                        <br>
                                     </a>
                                     <p style="font-size:16px; line-height:26px">{!!$proposal->description_short!!}</p>
-                                        <div class="feedback-box">
+                                        <div class="feedback-box" style="text-align:right">
                                             <div class="client">
                                                 <div class="quote blue-text">
                                                     <i class="icon-fontawesome-webfont-294"></i>

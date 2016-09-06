@@ -11,7 +11,7 @@ P.I. 11957540153  -
 <u><a href="/privacy">Privacy</a></u>  -  
 <u><a href="/regolamento">Regolamento</a></u> - 
 <u><a href="/liberatoria">Liberatoria</a></u> - 
-<u><a href="/informativa">Informativa</a></u>
+<u><a href="/informativa">Libertà intellettuale</a></u>
 </span>
 </div>
 
