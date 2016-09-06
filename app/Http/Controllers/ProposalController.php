@@ -15,7 +15,6 @@ use \App\Profile as Profile;
 use DB;
 use \App\Type as Type;
 use App\Http\Requests;
-use Purifier;
 
 class ProposalController extends Controller
 {
@@ -25,6 +24,46 @@ class ProposalController extends Controller
 		$title = 'Tutte le proposte';
 		$proposals = Proposal::where('status', 'approvata')->orderBy('id', 'desc')->paginate(12);
 		return view('proposals', compact('proposals', 'title'));
+	}
+	
+	public function add_like()
+	{
+		if (!Auth::user())
+			return redirect()->back();
+		
+		$proposal_id = Input::get('proposal_id');
+		$user_id = Auth::user()->id;
+		$vote = new \App\Vote;
+		$vote->user_id = $user_id;
+		$vote->proposal_id = $proposal_id;
+		$vote->save();
+		
+		$proposal = Proposal::find($proposal_id);
+		$likes = $proposal->likes;
+		$proposal->likes = $likes + 1;
+		$proposal->save();
+		
+		return 'ok';
+		
+	}
+	
+	public function remove_like()
+	{
+		if (!Auth::user())
+			return redirect()->back();
+		
+		$proposal_id = Input::get('proposal_id');
+		$user_id = Auth::user()->id;
+		$vote = \App\Vote::where('user_id', $user_id)->where('proposal_id', $proposal_id)->first();
+		$vote->delete();
+		
+		$proposal = Proposal::find($proposal_id);
+		$likes = $proposal->likes;
+		$proposal->likes = $likes - 1;
+		$proposal->save();
+		
+		return 'ok';
+		
 	}
 	
 	public function search()
@@ -170,6 +209,7 @@ class ProposalController extends Controller
 			$user = new \App\User;
 			$user->name = Input::get('name'). ' '. Input::get('surname');
 			$user->email = Input::get('email');
+			$user->password = bcrypt(Input::get('pass1'));
 			$user->occupation = Input::get('occupation');
 			$user->ip = request()->ip();
 			$user->save();
@@ -187,8 +227,8 @@ class ProposalController extends Controller
 		$proposal->title = Input::get('title');
 		$proposal->subtype_id = Input::get('subtype');
 		$proposal->status = 'da vedere';
-		$proposal->description_short = Purifier::clean(Input::get('description_short'));
-		$proposal->description_long = Purifier::clean(Input::get('description_long'));
+		$proposal->description_short = Input::get('description_short');
+		$proposal->description_long = Input::get('description_long');
 		$proposal->likes = 0;
 		$proposal->save();
 		

@@ -68,4 +68,35 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+    
+    public function registration()
+    {
+        if (Auth::check())
+            return redirect()->back();
+        
+        $check_email = User::where('email', Input::get('email'))->first();
+        if ($check_email == NULL) {
+            \App\Alert::error('Email già presente nel nostro database');
+            return redirect()->back();
+        }
+        
+        $user = new \App\User;
+        $user->name = Input::get('name'). ' '. Input::get('surname');
+        $user->email = Input::get('email');
+        $user->password = bcrypt(Input::get('pass1'));
+        $user->occupation = Input::get('occupation');
+        $user->ip = request()->ip();
+        $user->save();
+        
+        $profile = new \App\Profile;
+        $profile->name = Input::get('name');
+        $profile->surname = Input::get('surname');
+        $profile->gender = Input::get('gender');
+        $profile->save();
+        
+        Auth::login($user, true);
+        \App\Alert::success('Registrazione completata');
+        return redirect()->back();
+    }
+    
 }

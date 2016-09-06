@@ -15,6 +15,12 @@
 
 @yield('content')
 
+@include('components.login-modal')
+
+@include('components.upload-modal')
+
+<div id="fb-root"></div>
+
 <footer>
 	@include('frontend.layout.footer')
 </footer> <!-- / END FOOOTER  -->

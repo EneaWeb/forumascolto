@@ -4,6 +4,8 @@ Route::get('/', 'ProposalController@homepage');
 
 Route::get('/privacy', 'PageController@privacy');
 Route::get('/regolamento', 'PageController@regolamento');
+Route::get('/informativa', 'PageController@informativa');
+Route::get('/liberatoria', 'PageController@liberatoria');
 Route::get('/session', function(){ return dd(Session::all());});
 Route::get('/baseurl', function(){ return dd(Config::get('app.domain'));});
 Route::get('/user', function(){ return dd(Auth::user());});

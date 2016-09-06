@@ -2,7 +2,7 @@
 <meta name="description" content="a2a forum ascolto template page - demo -" />
 <meta name="keywords" content="a2a demo"/>
 <meta name="author" content="Giovanni Cellie" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <title>FORUMASCOLTO a2a</title>
 
 <!-- =========================
@@ -33,6 +33,10 @@
 {{HTML::style('/css/dd.css')}}
 {{HTML::style('/assets/css/alertify.min.css')}}
 {{HTML::style('/css/bootstrap-tagsinput.css')}}
+{{HTML::style('/css/component.css')}}
+{{HTML::style('/css/jquery.dropdown.min.css')}}
+
+
 <!-- WEBFONT -->
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
 
@@ -50,3 +54,6 @@
 {{HTML::script('/js/bootstrap-tagsinput.js')}}
 {{HTML::script('/js/summernote.min.js')}}
 {{HTML::script('/js/lang/summernote-it-IT.js')}}
+{{HTML::script('/js/modernizr.custom.js')}}
+{{HTML::script('/js/classie.js')}}
+{{HTML::script('/js/jquery.dropdown.min.js')}}

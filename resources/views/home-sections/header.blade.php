@@ -1,5 +1,3 @@
-@include('frontend.layout.nav_menu')
-
 <!-- =========================
    HOME SECTION       
 ============================== -->

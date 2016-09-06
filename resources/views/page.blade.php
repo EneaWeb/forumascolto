@@ -2,6 +2,12 @@
 @section('content')
     
     @include('frontend.layout.nav_menu')
+    
+    <style>
+        p {
+            text-align:justify;
+        }
+    </style>
 
     <div style="height:120px"></div>
     <section class="" style="min-height:90vh">

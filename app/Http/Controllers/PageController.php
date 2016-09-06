@@ -19,4 +19,16 @@ class PageController extends Controller
 		$page = Page::find('2');
 		return view('page', compact('page'));
 	}
+	
+	public function informativa()
+	{
+		$page = Page::find('3');
+		return view('page', compact('page'));
+	}
+	
+	public function liberatoria()
+	{
+		$page = Page::find('4');
+		return view('page', compact('page'));
+	}
 }

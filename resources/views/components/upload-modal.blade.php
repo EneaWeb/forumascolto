@@ -112,6 +112,14 @@ background-position: left top;
 	background-color: #00AAE7;
 }
 
+input[type=checkbox]:hover, input[type=checkbox]:focus {
+	display:inherit;
+	-webkit-appearance: default;
+	left:0;
+	width: auto;
+	margin-right:4px;
+}
+
 .previous.action-button {
 	float:left;
 }
@@ -242,11 +250,16 @@ background-position: left top;
 						<h3 class="fs-subtitle">
 							Grazie per avere compilato la tua proposta! Per completare la pubblicazione della proposta, è necessario essere registrati.
 						</h3>
-						
-						{!!Form::email('email', '', ['placeholder'=>'Email', 'id'=>'form-email', 'class'=>'mw300'])!!}
 						{!!Form::text('name', '', ['placeholder'=>'Nome', 'id'=>'form-name', 'class'=>'mw300'])!!}
 						{!!Form::text('surname', '', ['placeholder'=>'Cognome', 'id'=>'form-surname', 'class'=>'mw300'])!!}
 						{!!Form::text('occupation', '', ['placeholder'=>'Occupazione', 'id'=>'form-surname', 'class'=>'mw300'])!!}
+						{!!Form::email('email', '', ['placeholder'=>'Email', 'id'=>'form-email', 'class'=>'mw300'])!!}
+						{!!Form::text('pass1', '', ['placeholder'=>'Password', 'id'=>'form-pass1', 'class'=>'mw300'])!!}
+						{!!Form::text('pass2', '', ['placeholder'=>'Conferma Password', 'id'=>'form-pass2', 'class'=>'mw300'])!!}
+    <div class="mw300">
+      <input type="checkbox" value="">Dichiaro di aver letto e accettato tutti i termini del <a href="" target="_blank">regolamento</a> e l'<a href="" target="_blank">informativa sulla privacy</a>
+    </div>
+						
 						<select name="gender" id="form-gender" class="mw300">
 							<option disabled selected>Sesso</option>
 							<option value="F">F</option>

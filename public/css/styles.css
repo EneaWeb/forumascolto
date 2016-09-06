@@ -13,10 +13,8 @@ font-weight: normal;
 src: url("/fonts/BebasNeue.otf") format("opentype");
 }
 
-
 html {
-    
-    font-size: 100%;        
+    font-size: 100%;
 }
 
 body {
@@ -340,7 +338,7 @@ input:active,
 textarea:focus, 
 input:focus {
     outline-color: #00a9e6 !important;
-    -webkit-appearance:none;
+    /*-webkit-appearance:none; */
   -webkit-box-shadow:none !important;
           box-shadow:none !important;
         }
@@ -482,7 +480,7 @@ input:focus {
 .navbar-toggle {
 	border: 0;
 	background-color: #808080;
-        margin-top: 23px;
+        margin-top: 16px;
 }
 .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
 	background-color: #00a9e6;

@@ -18,14 +18,15 @@
                         </div>
                             
                         <div class="message">
-                        <h4 style="margin-bottom:20px; color:black; ">
+                            <h4 style="margin-bottom:20px; color:black; ">
 
-                            {!!$proposal->title!!}
-                            <br>
-                            <i class="fa fa-star" style="color:#F6DF42; margin-top:-3px"></i>
-                            <little style="color:#969696; font-size:0.7em">{!!$proposal->likes!!} preferenze</little>
-                        </h4>
-                            {!!substr(strip_tags($proposal->description_short, '<br>'), 0, 300)!!}
+                                <a href="/progetto/{!!$proposal->id!!}">{!!$proposal->title!!}</a>
+                                <br>
+                                <i class="fa fa-star" style="color:#F6DF42; margin-top:-3px"></i>
+                                <little style="color:#969696; font-size:0.7em">{!!$proposal->likes!!} preferenze</little>
+                            </h4>
+                            {!!substr(strip_tags($proposal->description_short, '<br>'), 0, 300)!!}...
+                            <a href="/proposta/{!!$proposal->id!!}"> Leggi tutto</a>
                         </div>
                         <div class="client">
                             <div class="quote blue-text">
@@ -55,5 +56,8 @@
     </div> <!-- / END ROW -->
     
 </div> <!-- / END CONTAINER -->
+
+<br><br>
+<a href="/proposte" class="btn btn-primary custom-button red-btn wow fadeInLeft animated animated animated" style="visibility: visible;">TUTTE LE PROPOSTE</a>
 
 </section>

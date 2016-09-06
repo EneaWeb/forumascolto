@@ -7,8 +7,8 @@
 {{ HTML::script('/js/smoothscroll.js') }}
 {{ HTML::script('/js/jquery.vegas.min.js') }}
 {{ HTML::script('/js/zerif.js') }}
+{{ HTML::script('/js/morphext.js') }}
 {{-- <script src="js/jquery.countdown.js"></script> --}}
-<script src="js/morphext.js"></script>
 
 <div id="search">
     <button type="button" class="close">×</button>
@@ -19,8 +19,9 @@
 </div>
 
 <script>
-	$(document).ready(function(){
 
+	$(document).ready(function(){
+		
 	    $('a[href="#search"]').on('click', function(event) {
 	        event.preventDefault();
 	        $('#search').addClass('open');
@@ -34,6 +35,15 @@
 	    });
 	    
 	});
+	
+	function fbShare(url) {
+		FB.ui(
+		 {
+		  method: 'share',
+		  href: url
+		}, function(response){});
+	}
+		
 </script>
 
 {{-- FACEBOOK LOGIN SCRIPT--}}

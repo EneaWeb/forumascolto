@@ -7,21 +7,22 @@
         <!-- SECTION TITLE -->
         <h2 class="dark-text">COME FUNZIONA</h2>
         
+    </div>
+    
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
         <h6 style="font-size:15px">
             <br>
-            Le relazioni con i territori al centro della Strategia Aziendale A2A. La capacità di ascoltare e rispondere in modo mirato ed efficace alle aspettative della comunità diventano quindi elementi fondamentali per il Gruppo A2A.
+             La capacità di ascoltare e rispondere in modo mirato ed efficace alle aspettative della comunità. La capacità di ascoltare e rispondere in modo mirato ed efficace alle aspettative della comunità è fondamentale per il Gruppo A2A.
             <br><br>
             ForumAscolto rappresenta la volontà di un “ascolto digitale e fisico” di tutti i cittadini. L’obiettivo è raccogliere idee e proposte di chi vive quotidianamente la città per renderla migliore, più vivibile ed efficiente. In una parola sola: Smart. 
             <br><br>
             Oltre all’ascolto digitale ci sarà anche un ascolto “reale”: A2A ha organizzato un momento di incontro con i cittadini e gli stakeholder del territorio milanese il 16 Novembre 2016 per raccogliere “ad  alta voce” le proposte che arrivano direttamente dalla città.
             <br><br>
-            Idee  e proposte che chiediamo di sviluppare devono “creare valore condiviso” per la città, portare quindi un vantaggio “visibile” e “vivibile” sia per i cittadini che per A2A. 
+            Potrai partecipare fisicamente al forumAscolto di Novembre a Milano. Alcune delle idee più votate dai cittadini, dopo esser state valutate da A2A, verranno presentate nel corso del forumAscolto. 
             <br><br>
             Potrai poi votare, condividere e commentare su Facebook le proposte che più ti piacciono.
-            <br><br>
+            <br><br><br><br>
         </h6>
-    </div>
     <!-- / END SECTION HEADER -->
     
     <!-- 4 FOCUS BOXES -->

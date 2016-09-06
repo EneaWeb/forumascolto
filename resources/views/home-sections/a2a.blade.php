@@ -10,7 +10,7 @@
         
         <!-- SECTION TITLE -->
         <h2 class="white-text" style="text-transform: lowercase;">
-            <div class="a2a-title" style="width:107px; height:41px; display:inline-block;"></div>
+            <div class="a2a-title" style="width:147px; height:56px; display:inline-block;"></div>
         </h2>
         
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
@@ -43,6 +43,8 @@
                 Siamo tra i primi operatori nelle reti di distribuzione elettrica. 
                 <br><br>
                 Siamo i primi operatori nel circolo idrico integrato e nello sviluppo di progetti di Smart City.
+                <br><br>
+                Del nostro Gruppo, fa parte anche AMSA che, da oltre un secolo, garantisce, con la collaborazione dei cittadini, l’igiene e il decoro di Milano.
             </p>
         </div>
         
