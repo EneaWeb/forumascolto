@@ -1,0 +1,7 @@
+build/coverage
+build/logs
+cache.properties
+phpunit.xml
+/composer.lock
+/composer.phar
+/.idea
