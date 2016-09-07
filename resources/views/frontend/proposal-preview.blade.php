@@ -11,7 +11,7 @@
 	   <br>
 	   <div class="">
 	   	<img id="blah" src="/uploads/proposals/{!!$proposal->picture!!}" alt="your image" style="float: left; max-width: 35%; margin-right: 4%; margin-bottom: 2%; border: 1px solid #009fdc;  padding: 10px;"/>
-	   		<h3 style="text-transform:uppercase">{!!$proposal->title!!}</h3>
+	   		<h3 style="text-transform:uppercase"><a href="/proposta/{!!$proposal->id!!}">{!!$proposal->title!!}</a></h3>
 	   		<a href="/area/{!!$proposal->type->id!!}"># {!!$proposal->type->name!!}</a> &nbsp; 
 	   		<a href="/tag/{!!$proposal->subtype->id!!}"># {!!$proposal->subtype->name!!}</a>
 	   		<br>

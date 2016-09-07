@@ -57,3 +57,9 @@
 {{HTML::script('/js/modernizr.custom.js')}}
 {{HTML::script('/js/classie.js')}}
 {{HTML::script('/js/jquery.dropdown.min.js')}}
+{{HTML::script('https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js')}}
+
+<style>
+body{padding-right:0!important;}
+html{overflow-y:scroll!important;}
+</style>

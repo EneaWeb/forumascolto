@@ -1723,11 +1723,11 @@ h3.fs-title {
 }
 
 .a2a-title {
-	background: url('/images/a2a.png');
-	width: 32px;
+	background: url('/images/a2a2.png');
+	width: 57px;
 	background-size: cover;
-	height: 12px;
-	margin-top: 12px;
+	height: 25px;
+	margin-top: 6px;
 	margin-bottom:11px;
 }
 
@@ -1827,4 +1827,11 @@ h3.fs-title {
 
 #xxx::-ms-input-placeholder {  
    color: rgba(0, 174, 239, 0.8);
+}
+
+.client-list a img {
+	max-width:32px;
+	max-height:32px;
+	border-radius:30px;
+	margin-left:6px;
 }

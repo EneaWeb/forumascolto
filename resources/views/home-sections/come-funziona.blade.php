@@ -14,7 +14,7 @@
             <br>
              La capacità di ascoltare e rispondere in modo mirato ed efficace alle aspettative della comunità. La capacità di ascoltare e rispondere in modo mirato ed efficace alle aspettative della comunità è fondamentale per il Gruppo A2A.
             <br><br>
-            ForumAscolto rappresenta la volontà di un “ascolto digitale e fisico” di tutti i cittadini. L’obiettivo è raccogliere idee e proposte di chi vive quotidianamente la città per renderla migliore, più vivibile ed efficiente. In una parola sola: Smart. 
+            forumAscolto rappresenta la volontà di un “ascolto digitale e fisico” di tutti i cittadini. L’obiettivo è raccogliere idee e proposte di chi vive quotidianamente la città per renderla migliore, più vivibile ed efficiente. In una parola sola: Smart. 
             <br><br>
             Oltre all’ascolto digitale ci sarà anche un ascolto “reale”: A2A ha organizzato un momento di incontro con i cittadini e gli stakeholder del territorio milanese il 16 Novembre 2016 per raccogliere “ad  alta voce” le proposte che arrivano direttamente dalla città.
             <br><br>
@@ -36,7 +36,7 @@
             <h5 class="red-border-bottom">FASE 1</h5>
             <br><h5 class="red-border-bottom">Iscriviti<br><br></h5> <!-- FOCUS HEADING -->
             <p> <!-- FOCUS DESCRIPTION -->
-                 Registrati sul sito ForumAscolto. Avrai la possibilità di migliorare Milano con le tue idee e le proposte.
+                 Registrati sul sito forumAscolto. Avrai la possibilità di migliorare Milano con le tue idee e le proposte.
             </p>
         </div>
         <!-- / END FIRST FOCUS BOX. Other boxes has same format -->
@@ -79,7 +79,7 @@
                 <i class="pixeden pd-icon-check"></i>
             </div>
             <h5 class="blue-border-bottom">FASE 5</h5>
-            <br><h5 class="red-border-bottom">Resta aggiornato<br><br></h5> <!-- FOCUS HEADING -->
+            <br><h5 class="red-border-bottom"><a href="/">Resta aggiornato</a><br><br></h5> <!-- FOCUS HEADING -->
             <p>
                Qui trovi i progetti che abbiamo ideato con i cittadini di altre città in cui opera A2A, quelli che abbiamo realizzato e quelli che vogliamo realizzare in futuro.
             </p>

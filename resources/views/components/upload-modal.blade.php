@@ -112,14 +112,6 @@ background-position: left top;
 	background-color: #00AAE7;
 }
 
-input[type=checkbox]:hover, input[type=checkbox]:focus {
-	display:inherit;
-	-webkit-appearance: default;
-	left:0;
-	width: auto;
-	margin-right:4px;
-}
-
 .previous.action-button {
 	float:left;
 }
@@ -155,7 +147,7 @@ input[type=checkbox]:hover, input[type=checkbox]:focus {
 						@endforeach
 					</select>
 					<br><br>
-						<div id="subtypes" style="height:60px; margin-top:-10px; margin-bottom:36px">
+						<div id="subtypes" style="margin-top:-10px; margin-bottom:20px">
 							<h3 class="fs-title" style="opacity:0.1">Seleziona <br>un<span class="colored-blue"> hashtag</span> di riferimento.</h3>
 							<input name ="subtype" type="radio">
 						</div>
@@ -256,15 +248,21 @@ input[type=checkbox]:hover, input[type=checkbox]:focus {
 						{!!Form::email('email', '', ['placeholder'=>'Email', 'id'=>'form-email', 'class'=>'mw300'])!!}
 						{!!Form::text('pass1', '', ['placeholder'=>'Password', 'id'=>'form-pass1', 'class'=>'mw300'])!!}
 						{!!Form::text('pass2', '', ['placeholder'=>'Conferma Password', 'id'=>'form-pass2', 'class'=>'mw300'])!!}
-    <div class="mw300">
-      <input type="checkbox" value="">Dichiaro di aver letto e accettato tutti i termini del <a href="" target="_blank">regolamento</a> e l'<a href="" target="_blank">informativa sulla privacy</a>
-    </div>
-						
-						<select name="gender" id="form-gender" class="mw300">
-							<option disabled selected>Sesso</option>
-							<option value="F">F</option>
-							<option value="M">M</option>
-						</select>
+					   <div class="mw300">
+					      <input type="checkbox" value=""> <i>Registrandoti o accedendo con facebook accetti i <a href="/regolamento">termini e le condizioni</a></i>
+					   </div>
+						<div class="row">
+						<div class="col-md-6">
+							<select name="gender" id="form-gender" class="mw300">
+								<option disabled selected>Sesso</option>
+								<option value="F">F</option>
+								<option value="M">M</option>
+							</select>
+						</div>
+						<div class="col-md-6">
+
+						</div>
+
 						<br>
 						<br>
 						<a class="btn red-btn" id="save_all" style="color:white;padding:12px;border-radius:0;font-weight:bold;">
@@ -458,81 +456,6 @@ input[type=checkbox]:hover, input[type=checkbox]:focus {
 					$('.launch-modal-upload').on('click', function(e){
 						e.preventDefault();
 						$( '#' + $(this).data('modal-id') ).modal();
-					});
-					
-					//jQuery time
-					var current_fs, next_fs, previous_fs; //fieldsets
-					var left, opacity, scale; //fieldset properties which we will animate
-					var animating; //flag to prevent quick multi-click glitches
-
-					$(".next").click(function(){
-						if(animating) return false;
-						animating = true;
-						
-						current_fs = $(this).parent();
-						next_fs = $(this).parent().next();
-						
-						//activate next step on progressbar using the index of next_fs
-						$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-						
-						//show the next fieldset
-						next_fs.show(); 
-						//hide the current fieldset with style
-						current_fs.animate({opacity: 0}, {
-							step: function(now, mx) {
-								//as the opacity of current_fs reduces to 0 - stored in "now"
-								//1. scale current_fs down to 80%
-								scale = 1 - (1 - now) * 0.2;
-								//2. bring next_fs from the right(50%)
-								left = (now * 50)+"%";
-								//3. increase opacity of next_fs to 1 as it moves in
-								opacity = 1 - now;
-								current_fs.css({'transform': 'scale('+scale+')'});
-								next_fs.css({'left': left, 'opacity': opacity});
-							}, 
-							duration: 800, 
-							complete: function(){
-								current_fs.hide();
-								animating = false;
-							}, 
-							//this comes from the custom easing plugin
-							easing: 'easeInOutBack'
-						});
-					});
-
-					$(".previous").click(function(){
-						if(animating) return false;
-						animating = true;
-						
-						current_fs = $(this).parent();
-						previous_fs = $(this).parent().prev();
-						
-						//de-activate current step on progressbar
-						$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-						
-						//show the previous fieldset
-						previous_fs.show(); 
-						//hide the current fieldset with style
-						current_fs.animate({opacity: 0}, {
-							step: function(now, mx) {
-								//as the opacity of current_fs reduces to 0 - stored in "now"
-								//1. scale previous_fs from 80% to 100%
-								scale = 0.8 + (1 - now) * 0.2;
-								//2. take current_fs to the right(50%) - from 0%
-								left = ((1-now) * 50)+"%";
-								//3. increase opacity of previous_fs to 1 as it moves in
-								opacity = 1 - now;
-								current_fs.css({'left': left});
-								previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
-							}, 
-							duration: 800, 
-							complete: function(){
-								current_fs.hide();
-								animating = false;
-							}, 
-							//this comes from the custom easing plugin
-							easing: 'easeInOutBack'
-						});
 					});
 					
 				});

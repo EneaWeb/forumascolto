@@ -67,3 +67,9 @@
     </div>
 </div>
 <!-- / END TOP BAR -->
+
+<style>
+#menu-is-logged:hover:before, #menu-is-logged.current:before {
+    background:inherit;
+}
+</style>

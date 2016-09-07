@@ -10,7 +10,7 @@
         
         <!-- SECTION TITLE -->
         <h2 class="white-text" style="text-transform: lowercase;">
-            <div class="a2a-title" style="width:147px; height:56px; display:inline-block;"></div>
+            <a href="http://a2a.eu" target="_blank"><div class="a2a-title" style="width:200px; height:92px; display:inline-block;"></div></a>
         </h2>
         
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
@@ -26,7 +26,7 @@
         <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
         <div class="col-lg-4 col-md-4 column">
             <div class="big-intro wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                 <div class="a2a-title" style="width:107px; height:41px; display:inline-block;"></div>
+                  <a href="http://a2a.eu" target="_blank"><div class="a2a-title" style="width:140px; height:63px; margin-right:-4px; display:inline-block;"></div></a>
                   <br>per Milano.<br>Da sempre accanto all’evoluzione della città.
             </div>
         </div>
@@ -104,8 +104,15 @@
     <div class="our-clients">
         <h5><span class="section-footer-title">DOVE SIAMO</span></h5>
     </div>
-    <!-- CLIENT LIST -->
     <div class="client-list">
+    Segui a2a su: 
+    <a href="https://www.facebook.com/GruppoA2A/" target="_blank"><img src="/images/facebook.png"/></a>
+    <a href="https://twitter.com/gruppo_a2a" target="_blank"><img src="/images/twitter.png"/></a>
+    <a href="https://www.linkedin.com/company/a2a" target="_blank"><img src="/images/linkedin.png"/></a>
+    <a href="https://www.youtube.com/user/a2a" target="_blank"><img src="/images/youtube.png"/></a>
+
+    <br><br>
+
     <!-- 
         <ul class="wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
             <li><a href="#"><img src="images/clients/1.png" alt="Client 1"></a></li>

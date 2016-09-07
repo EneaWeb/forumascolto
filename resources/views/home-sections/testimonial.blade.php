@@ -13,7 +13,7 @@
                 
                     <div class="feedback-box">
                     
-                        <div class="project-icon" style="color:{!!$proposal->type->hex!!};">
+                        <div class="project-icon" style="color:{!!$proposal->type->hex!!}; width:auto; right:0; padding-right:10px">
                             <i class="fa {!!$proposal->type->icon!!} fa-4x"></i>
                         </div>
                             
