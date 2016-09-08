@@ -15,6 +15,7 @@
     </div>
     <!-- CONTACT FORM-->
     <div class="row">
+        {{--
         <div class="col-md-2">
             <div class="row" style="margin-bottom:20px">
                 <div class="col-xs-9">
@@ -45,8 +46,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="col-md-9">
+        --}}
+        <div class="col-md-12">
         
             {!!Form::open(['url'=>'/contact-form/send', 'method'=>'POST', 'class'=>'contact-form'])!!}
             
@@ -63,7 +64,7 @@
                 </div>
                 
                 <div class="col-md-12 wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                    {!!Form::textarea('message', '', ['class'=>'form-control textarea-box', 'placeholder'=>'Scrivi qui il tuo messaggio ...', 'id'=>'message'])!!}                    
+                    {!!Form::textarea('message', '', ['class'=>'form-control textarea-box', 'placeholder'=>'Scrivi qui il tuo messaggio ...', 'id'=>'message'])!!}
                 </div>
                 
                 {!!Form::submit('Invia il messaggio', ['class'=>'btn btn-primary custom-button red-btn wow fadeInLeft animated'])!!}
