@@ -23,6 +23,8 @@
     
     @include('home-sections.contact-us')
 
+    @include('components.like-button')
+
 @stop
 
 @section('more-scripts')

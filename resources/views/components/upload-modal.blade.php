@@ -257,7 +257,6 @@ background-position: left top;
                   <div class="form-group">
                      <input type="checkbox" value="" style="width:auto"> <i>Registrandoti o accedendo con facebook accetti i <a href="/regolamento">termini e le condizioni</a></i>
                   </div>
-
 						<br>
 						<br>
 						<a class="btn red-btn" id="save_all" style="color:white;padding:12px;border-radius:0;font-weight:bold;">
