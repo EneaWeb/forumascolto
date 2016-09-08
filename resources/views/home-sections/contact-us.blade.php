@@ -52,15 +52,15 @@
             {!!Form::open(['url'=>'/contact-form/send', 'method'=>'POST', 'class'=>'contact-form'])!!}
             
                 <div class="wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                <div class="col-lg-6 col-sm-6">
-                    {!!Form::input('text', 'name', '', ['class'=>'form-control input-box', 'id'=>'name', 'placeholder'=>'Nome'])!!}
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    {!!Form::input('email', 'email', '', ['class'=>'form-control input-box', 'id'=>'email', 'placeholder'=>'Email'])!!}
-                </div>
-                <div class="col-lg-12 col-sm-12">
-                    {!!Form::select('subject', \App\ContactType::pluck('name', 'name'), '', ['class'=>'form-control input-box', 'placeholder'=>'Seleziona il motivo del contatto'])!!}
-                </div>
+                    <div class="col-lg-6 col-sm-6">
+                        {!!Form::input('text', 'name', '', ['class'=>'form-control input-box', 'id'=>'name', 'placeholder'=>'Nome'])!!}
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        {!!Form::input('email', 'email', '', ['class'=>'form-control input-box', 'id'=>'email', 'placeholder'=>'Email'])!!}
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        {!!Form::select('subject', \App\ContactType::pluck('name', 'name'), '', ['class'=>'form-control input-box', 'placeholder'=>'Seleziona il motivo del contatto'])!!}
+                    </div>
                 </div>
                 
                 <div class="col-md-12 wow fadeInRight animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
