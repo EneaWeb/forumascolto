@@ -218,6 +218,7 @@ class ProposalController extends Controller
 			$profile->name = Input::get('name');
 			$profile->surname = Input::get('surname');
 			$profile->gender = Input::get('gender');
+			$profile->postcode = Input::get('postcode');
 			$profile->save();
 		}
 

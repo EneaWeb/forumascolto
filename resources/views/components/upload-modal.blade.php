@@ -197,7 +197,7 @@ background-position: left top;
 					</h3>
 					{!!Form::file('picture', ['id'=>'imgInp'])!!}
 					<input type="button" name="previous" class="previous action-button" value="Indietro" />
-					<input type="button" name="next" id="next-4" class="next action-button" value="Avanti" disabled />
+					<input type="button" name="next" id="next-4" class="next action-button" value="Avanti" />
 				</fieldset>
 				<fieldset>
 					<span class="form-badge">5</span>
@@ -210,7 +210,7 @@ background-position: left top;
 						<div class="row">
 								
 							<div class="col-md-12">
-								<img id="blah" src="#" alt="your image" style="float: left; max-width: 45%; margin-right: 4%; margin-bottom: 2%;"/>
+								<img id="blah" src="/uploads/proposals/default.jpg" alt="your image" style="float: left; max-width: 45%; margin-right: 4%; margin-bottom: 2%;"/>
 								<h3 id="preview-title" class="fs-title" style="text-align:left"></h3>
 								<h3 id="preview-description_short" style="text-align:left" class="fs-subtitle"></h3>
 							</div>
@@ -248,20 +248,15 @@ background-position: left top;
 						{!!Form::email('email', '', ['placeholder'=>'Email', 'id'=>'form-email', 'class'=>'mw300'])!!}
 						{!!Form::text('pass1', '', ['placeholder'=>'Password', 'id'=>'form-pass1', 'class'=>'mw300'])!!}
 						{!!Form::text('pass2', '', ['placeholder'=>'Conferma Password', 'id'=>'form-pass2', 'class'=>'mw300'])!!}
-					   <div class="mw300">
-					      <input type="checkbox" value=""> <i>Registrandoti o accedendo con facebook accetti i <a href="/regolamento">termini e le condizioni</a></i>
-					   </div>
-						<div class="row">
-						<div class="col-md-6">
-							<select name="gender" id="form-gender" class="mw300">
-								<option disabled selected>Sesso</option>
-								<option value="F">F</option>
-								<option value="M">M</option>
-							</select>
-						</div>
-						<div class="col-md-6">
-
-						</div>
+						{!!Form::text('postcode', '', ['placeholder'=>'CAP', 'id'=>'form-cap', 'class'=>'mw300'])!!}
+						<select name="gender" id="form-gender" class="mw300">
+							<option disabled selected>Sesso</option>
+							<option value="F">F</option>
+							<option value="M">M</option>
+						</select>
+                  <div class="form-group">
+                     <input type="checkbox" value="" style="width:auto"> <i>Registrandoti o accedendo con facebook accetti i <a href="/regolamento">termini e le condizioni</a></i>
+                  </div>
 
 						<br>
 						<br>
@@ -294,7 +289,6 @@ background-position: left top;
 				      	} else {
 				      		$('#error-picture').hide();
 								$('#blah').attr('src', e.target.result);
-				         	$('#next-4').removeAttr("disabled");
 				      	}
 				      }
 				      reader.readAsDataURL(input.files[0]);
