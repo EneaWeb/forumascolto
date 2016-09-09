@@ -105,7 +105,7 @@
                            </div>
                         </div>
                         <div class="form-group">
-                           <input type="checkbox" value=""> <i>Registrandoti o accedendo con facebook accetti i <a href="/regolamento">termini e le condizioni</a></i>
+                           <input type="checkbox" value=""> <i>Registrandoti o accedendo con facebook accetti i <a href="/regolamento" target="_blank">termini e le condizioni</a></i>
                         </div>
                         <div class="row">
                            <div class="col-md-6">

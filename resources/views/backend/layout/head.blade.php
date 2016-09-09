@@ -18,6 +18,7 @@
     {{ HTML::style('/assets/css/bootstrap-select.css') }}
     {{ HTML::style('/assets/css/lightbox/ekko-lightbox.min.css') }}
     {{ HTML::style('/assets/css/fontawesome/font-awesome.min.css') }}
+    {{ HTML::style('/assets/css/buttons.bootstrap.min.css') }}
     
     {{ HTML::style('/assets/css/morris-0.4.3.min.css') }}
     

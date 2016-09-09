@@ -22,7 +22,7 @@
                 </div>
                 
             </div>
-            <p style="margin:30px"><u>Descrizione estesa:</u><br>{!!$proposal->description_long!!}</p>
+            <div class="col-md-12"><u>Descrizione estesa:</u><br>{!!$proposal->description_long!!}</div>
             
         </div>
     </div>

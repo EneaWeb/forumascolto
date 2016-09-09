@@ -1,7 +1,5 @@
 @extends('frontend.layout.main')
 @section('content')
-    
-    @include('frontend.layout.nav_menu')
 
     <div style="height:120px"></div>
     <section class="" style="min-height:90vh">
@@ -37,12 +35,4 @@
 
         </div> <!-- / END CONTAINER -->
     </section>
-    
-    
-    <div id="fb-root"></div>
-
-@stop
-
-@section('more-scripts')
-
 @stop

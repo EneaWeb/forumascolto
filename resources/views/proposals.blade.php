@@ -30,7 +30,9 @@
                                    </div>
                                    <br>
                                    <div class="">
-                                        <img id="blah" src="/uploads/proposals/{!!$proposal->picture!!}" alt="your image" style="float: left; width:30%; margin-right: 4%; margin-bottom: 2%; border: 1px solid #009fdc;  padding: 10px;"/>
+                                        <a href="/proposta/{!!$proposal->id!!}">
+                                            <img id="blah" src="/uploads/proposals/{!!$proposal->picture!!}" alt="your image" style="float: left; width:30%; margin-right: 4%; margin-bottom: 2%; border: 1px solid #009fdc;  padding: 10px;"/>
+                                        </a>
                                         <a href="/proposta/{!!$proposal->id!!}"><h3 style="text-transform:uppercase">{!!$proposal->title!!}</h3></a>
                                         <a href="/area/{!!$proposal->type->id!!}"># {!!$proposal->type->name!!}</a> &nbsp; 
                                         <a href="/tag/{!!$proposal->subtype->id!!}"># {!!$proposal->subtype->name!!}</a>

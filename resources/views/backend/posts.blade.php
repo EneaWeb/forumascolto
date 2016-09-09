@@ -14,27 +14,12 @@
                     <div class="panel-heading">
                     
                         <button href="#" data-toggle="modal" data-target="#modal_add_post" class="btn btn-danger"><span class="fa fa-pencil"></span>NUOVO POST</button>
-                                            
-                        <div class="btn-group pull-right">
-                            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Esporta</button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'excel',escape:'false'});">
-                                    <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i> Excel
-                                </a></li>
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'png',escape:'false'});">
-                                    <i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i> PNG
-                                </a></li>
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'pdf',escape:'false'});">
-                                    <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i> PDF
-                                </a></li>
-                            </ul>
-                        </div>                                    
                         
                     </div>
                     <div class="panel-body">
                         <div class="table-responsive">
                             <div class="dataTables_wrapper no-footer">
-                                <table id="coupons" class="table table-condensed">
+                                <table id="posts" class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -128,6 +113,25 @@
     {{-- END MODAL EDIT POST --}}
     
     <script>
+
+
+    $(document).ready(function(){
+        $('#posts').DataTable( {
+            "language": { "url": "/assets/js/plugins/datatables/IT.json" },
+            sScrollX: "100%",
+            paginate: false,
+            bSort: true,
+            deferRender: true,
+            dom: 'Bfrtip',
+            buttons: [
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdf'
+            ],
+        });
+    })
+
         $('#modal_edit_post').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var id = button.data('post_id') // Extract info from data-* attributes

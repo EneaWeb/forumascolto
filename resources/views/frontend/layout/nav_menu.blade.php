@@ -3,6 +3,11 @@
         <li><a href="/logout">
             SCOLLEGATI <br>
         </a></li>
+        @if (Auth::check() && Auth::user()->can('access backend'))
+        <li><a href="/admin">
+            BACKEND <br>
+        </a></li>
+        @endif
     </ul>
 </div>
 

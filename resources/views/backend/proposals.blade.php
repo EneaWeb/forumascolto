@@ -11,28 +11,13 @@
             <div class="col-md-12">
                 
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                                            
-                        <div class="btn-group pull-right">
-                            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Esporta</button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'excel',escape:'false'});">
-                                    <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i> Excel
-                                </a></li>
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'png',escape:'false'});">
-                                    <i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i> PNG
-                                </a></li>
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'pdf',escape:'false'});">
-                                    <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i> PDF
-                                </a></li>
-                            </ul>
-                        </div>                                    
+                    <div class="panel-heading">                               
                         
                     </div>
                     <div class="panel-body">
                         <div class="table-responsive">
                             <div class="dataTables_wrapper no-footer">
-                                <table id="coupons" class="table table-condensed datatable">
+                                <table id="proposals" class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -97,6 +82,25 @@
     {{-- END MODAL EDIT POST --}}
     
     <script>
+
+
+        $(document).ready(function(){
+            $('#proposals').DataTable( {
+                "language": { "url": "/assets/js/plugins/datatables/IT.json" },
+                sScrollX: "100%",
+                paginate: false,
+                bSort: true,
+                deferRender: true,
+                dom: 'Bfrtip',
+                buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdf'
+                ],
+            });
+        })
+
         $('#modal_show_proposal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var id = button.data('proposal_id') // Extract info from data-* attributes

@@ -19,7 +19,7 @@
         <a href="#"><span class="fa fa-power-off"></span></a>
         <ul class="xn-drop-left animated zoomIn">
             {{-- <li><a href="pages-lock-screen.html"><span class="fa fa-lock"></span> Lock Screen</a></li> --}}
-            <li><a href="/logout"><span class="fa fa-sign-out"></span> {!!trans('auth.Sign Out')!!}</a></li>
+            <li><a href="/logout"><span class="fa fa-sign-out"></span> Scollegati </a></li>
         </ul>                        
     </li> 
     {{-- END POWER OFF --}}

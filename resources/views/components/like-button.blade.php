@@ -10,7 +10,7 @@
 	#facebooklike{
 		position:fixed;
 		left:6px;
-		top:50%;
+		top:20%;
 		cursor:pointer;
 		z-index:9999;
 	}

@@ -87,6 +87,8 @@ class RegisterController extends Controller
         $user->occupation = Input::get('occupation');
         $user->ip = request()->ip();
         $user->save();
+
+        $user->assignRole('customer');
         
         $profile = new \App\Profile;
         $profile->name = Input::get('name');

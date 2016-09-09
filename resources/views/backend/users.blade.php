@@ -11,28 +11,13 @@
             <div class="col-md-12">
                 
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                                            
-                        <div class="btn-group pull-right">
-                            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i> Esporta</button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'excel',escape:'false'});">
-                                    <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i> Excel
-                                </a></li>
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'png',escape:'false'});">
-                                    <i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i> PNG
-                                </a></li>
-                                <li><a href="#" onClick ="$('#coupons').tableExport({type:'pdf',escape:'false'});">
-                                    <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i> PDF
-                                </a></li>
-                            </ul>
-                        </div>                                    
+                    <div class="panel-heading">                         
                         
                     </div>
                     <div class="panel-body">
                         <div class="table-responsive">
                             <div class="dataTables_wrapper no-footer">
-                                <table id="coupons" class="table table-condensed datatable">
+                                <table id="users" class="table table-condensed">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -40,6 +25,7 @@
                                             <th>Email</th>
                                             <th>Proposte</th>
                                             <th>Facebook</th>
+                                            <th>Ruolo</th>
                                             <th>Data</th>
                                         </tr>
                                     </thead>
@@ -51,7 +37,8 @@
                                                 <td>{!!$user->email!!}</td>
                                                 <td>{!!$user->proposals->count()!!}</td>
                                                 <td><a href="http://facebook.com/{!!$user->fb_id!!}" target="_blank">{!!$user->fb_id!!}</a></td>
-                                                <td>{!!\Carbon\Carbon::parse($user->created_at)->format('d/m/Y')!!}
+                                                <td>{!!ucfirst($user->roles()->value('name'))!!}</td>
+                                                <td>{!!\Carbon\Carbon::parse($user->created_at)->format('d/m/Y')!!}</td>
                                             </tr>
                                         @endforeach
                                     </tbody>
@@ -122,6 +109,25 @@
     {{-- END MODAL EDIT POST --}}
     
     <script>
+
+    $(document).ready(function(){
+        $('#users').DataTable( {
+            "language": { "url": "/assets/js/plugins/datatables/IT.json" },
+            sScrollX: "100%",
+            paginate: false,
+            bSort: true,
+            deferRender: true,
+            dom: 'Bfrtip',
+            buttons: [
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdf'
+            ],
+        });
+    })
+
+
         $('#modal_edit_post').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var id = button.data('post_id') // Extract info from data-* attributes
