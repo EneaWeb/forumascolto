@@ -18,7 +18,7 @@ class Proposal extends Model
 		'description_short',
 		'description_long',
 		'picture',
-		'status',
+		'status', // da vedere // da verificare // non approvata // approvata //
 		'likes'
 	];
 	/**

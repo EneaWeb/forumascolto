@@ -14,9 +14,9 @@ class MailController extends Controller
 	{
 		
 		// retrieve form data
-		$name = Input::get('mail');
+		$name = Input::get('name');
 		$subject = Input::get('subject');
-		$content = Input::get('content');
+		$content = Input::get('message');
 		$email = Input::get('email');
 		
 		// set title manually

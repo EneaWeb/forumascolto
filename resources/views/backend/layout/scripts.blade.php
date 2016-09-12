@@ -11,8 +11,20 @@
        return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
      };
      
+    function confirm_request_proposal(proposal_id){
+        alertify.confirm( "Conferma", "Sei sicuro di volere inviare la proposta ad a2a per la validazione?", 
+            function () {
+                // positive
+                window.location.href = "/admin/proposals/request/"+proposal_id;
+            }, 
+            function() {
+                ; // negative// do nothing 
+            }
+        );
+    };
+
     function confirm_confirm_proposal(proposal_id){
-        alertify.confirm( "Conferma", "Sei sicuro di volere approvare questa proposta? Da questo momento diventerà visibile.", 
+        alertify.confirm( "Conferma", "Sei sicuro di volere approvare questa proposta? Da questo momento diventerà visibile e l'utente riceverà una email.", 
             function () {
                 // positive
                 window.location.href = "/admin/proposals/confirm/"+proposal_id;

@@ -115,7 +115,7 @@
       <tbody><tr style="vertical-align: top">
           <td class="center" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;text-align: center;background-color: #FFFFFF" align="center" valign="top">
 
-              <table style="border-spacing: 0;border-collapse: collapse;vertical-align: top;background-color: transparent" cellpadding="0" cellspacing="0" align="center" width="100%" border="0">
+              <table style="border-spacing: 0;border-collapse: collapse;vertical-align: top;background-color: transparent" cellpadding="0" cellspacing="0" align="left" width="100%" border="0">
                 <tbody><tr style="vertical-align: top">
                   <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top" width="100%">
                     <!--[if gte mso 9]>
@@ -126,7 +126,7 @@
                         <tr>
                             <td>
                     <![endif]-->
-                    <table class="container" style="border-spacing: 0;border-collapse: collapse;vertical-align: top;max-width: 500px;margin: 0 auto;text-align: inherit" cellpadding="0" cellspacing="0" align="center" width="100%" border="0"><tbody><tr style="vertical-align: top"><td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top" width="100%"><table class="block-grid two-up" style="border-spacing: 0;border-collapse: collapse;vertical-align: top;width: 100%;max-width: 500px;color: #333;background-color: transparent" cellpadding="0" cellspacing="0" width="100%" bgcolor="transparent"><tbody><tr style="vertical-align: top"><td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;text-align: center;font-size: 0"><!--[if (gte mso 9)|(IE)]><table width="100%" align="center" bgcolor="transparent" cellpadding="0" cellspacing="0" border="0"><tr><![endif]--><!--[if (gte mso 9)|(IE)]><td valign="top" width="250"><![endif]--><div class="col num6" style="display: inline-block;vertical-align: top;text-align: center;width: 250px"><table style="border-spacing: 0;border-collapse: collapse;vertical-align: top" cellpadding="0" cellspacing="0" align="center" width="100%" border="0"><tbody><tr style="vertical-align: top"><td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;background-color: transparent;padding-top: 5px;padding-right: 0px;padding-bottom: 5px;padding-left: 0px;border-top: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-left: 0px solid transparent"><table style="border-spacing: 0;border-collapse: collapse;vertical-align: top" cellpadding="0" cellspacing="0" width="100%" border="0">
+                    <table class="container" style="border-spacing: 0;border-collapse: collapse;vertical-align: top;max-width: 500px;margin: 0 auto;text-align: inherit" cellpadding="0" cellspacing="0" align="center" width="100%" border="0"><tbody><tr style="vertical-align: top"><td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top" width="100%"><table class="block-grid two-up" style="border-spacing: 0;border-collapse: collapse;vertical-align: top;width: 100%;max-width: 500px;color: #333;background-color: transparent" cellpadding="0" cellspacing="0" width="100%" bgcolor="transparent"><tbody><tr style="vertical-align: top"><td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;text-align: center;font-size: 0"><!--[if (gte mso 9)|(IE)]><table width="100%" align="center" bgcolor="transparent" cellpadding="0" cellspacing="0" border="0"><tr><![endif]--><!--[if (gte mso 9)|(IE)]><td valign="top" width="250"><![endif]--><div class="col num6" style="display: inline-block;vertical-align: top;text-align: center;width: 250px"><table style="border-spacing: 0;border-collapse: collapse;vertical-align: top" cellpadding="0" cellspacing="0" align="left" width="100%" border="0"><tbody><tr style="vertical-align: top"><td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;background-color: transparent;padding-top: 5px;padding-right: 0px;padding-bottom: 5px;padding-left: 0px;border-top: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;border-left: 0px solid transparent"><table style="border-spacing: 0;border-collapse: collapse;vertical-align: top" cellpadding="0" cellspacing="0" width="100%" border="0">
     <tbody><tr style="vertical-align: top">
         <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;width: 100%;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px" align="left">
             <div style="font-size:12px" align="left">
@@ -163,9 +163,9 @@
   <tbody><tr style="vertical-align: top">
     <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;padding-top: 10px;padding-right: 10px;padding-bottom: 0px;padding-left: 10px">
         <div style="color:#555555;line-height:120%;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">            
-        	<div style="font-size:12px;line-height:14px;color:#555555;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px"><span style="font-size: 24px; line-height: 28px;"><strong><span style="line-height: 28px; font-size: 24px;">
+        	<div style="font-size:12px;line-height:14px;color:#555555;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:center;"><p style="margin: 0;font-size: 30px;line-height: 32px"><span style="font-size: 30px; line-height: 32px;"><strong><span style="line-height: 52px; font-size: 40px;">
           
-          Hai ricevuto un messaggio dal sito
+              {!!$title!!}
           
           </span></strong></span></p></div>
         </div>
@@ -178,19 +178,9 @@
         <div style="color:#777777;line-height:120%;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">            
         	<div style="font-size:12px;line-height:14px;color:#777777;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px">&nbsp;<br></p><p style="margin: 0;font-size: 14px;line-height: 16px"><span style="text-decoration: underline; font-size: 14px; line-height: 16px;"><span style="font-size: 16px; line-height: 19px;">
           
+
           
-          Argomento: {!! $subject !!}
-          
-          
-          </span></span></p><p style="margin: 0;font-size: 14px;line-height: 16px"><span style="text-decoration: underline; font-size: 14px; line-height: 16px;"><span style="font-size: 16px; line-height: 19px;"><br data-mce-bogus="1"></span></span></p><p style="margin: 0;font-size: 14px;line-height: 16px"><span style="font-size: 16px; line-height: 19px;">
-          
-          Nome: {!! $name !!}
-          
-          </span></p><p style="margin: 0;font-size: 14px;line-height: 16px"><span style="font-size: 16px; line-height: 19px;">
-          
-          Email: {!! $email !!}
-          
-          </span></p></div>
+          </span></span></p><p style="margin: 0;font-size: 14px;line-height: 16px"><span style="text-decoration: underline; font-size: 14px; line-height: 16px;"><span style="font-size: 16px; line-height: 19px;"><br data-mce-bogus="1"></span></span></p></div>
         </div>
     </td>
   </tr>
@@ -199,11 +189,20 @@
   <tbody><tr style="vertical-align: top">
     <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;padding-top: 15px;padding-right: 10px;padding-bottom: 10px;padding-left: 10px">
         <div style="color:#aaaaaa;line-height:120%;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">            
-        	<div style="font-size:12px;line-height:14px;color:#aaaaaa;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px">
+        	<div style="font-size:24px;line-height:30px;color:#000;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:left;"><p style="margin: 0;font-size: 22px;line-height: 28px; color:000; text-align:center">
           
           {!! $content !!}
-          
+
+          <br><br>
+          <p style="margin: 0;font-size: 22px;line-height: 28px; color:000; text-align:center">Da parte del Gruppo a2a, un sincero grazie per aver partecipato al <strong>forumAscolto</strong></p>
+          <br><br>
+          <div style="text-align:center">
+            <a href="https://www.facebook.com/GruppoA2A/" target="_blank"><button style="background-color:#24A3D8; color:white; font-size:16px; border:none; padding:10px 20px">
+              Segui forumAscolto su Facebook
+            </button> </a>
+          </div>
           </p></div>
+          <br><br>
         </div>
     </td>
   </tr>
@@ -302,7 +301,7 @@
   <tbody><tr style="vertical-align: top">
     <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;padding-top: 10px;padding-right: 10px;padding-bottom: 10px;padding-left: 10px">
         <div style="color:#bbbbbb;line-height:120%;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">            
-        	<div style="font-size:12px;line-height:14px;color:#bbbbbb;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:left;"><p style="margin: 0;font-size: 12px;line-height: 14px">P.I. 11957540153 - <a style="color:#B5B5B5;text-decoration: underline;" href="http://forumascoltoa2a.it/privacy" target="_blank">Privacy </a>- <a style="color:#B5B5B5;text-decoration: underline;" href="http://forumascoltoa2a.it/regolamento" target="_blank">Regolamento</a></p></div>
+        	<div style="font-size:12px;line-height:14px;color:#bbbbbb;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;text-align:left;"><p style="margin: 0;font-size: 12px;line-height: 14px">P.I. 11957540153 - <a style="color:#B5B5B5;text-decoration: underline;" href="http://forumascoltoa2a.local/privacy" target="_blank">Privacy </a>- <a style="color:#B5B5B5;text-decoration: underline;" href="http://forumascoltoa2a.local/regolamento" target="_blank">Regolamento</a></p></div>
         </div>
     </td>
   </tr>

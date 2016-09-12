@@ -23,7 +23,7 @@
     <a href="/#focus">COME FUNZIONA</a>
     <a href="/#works">PROGETTI</a>
     <a href="/#faq">FAQ</a>
-    <a href="/#contact">CONTATTI</a>
+    <a href="/#contact">CONTATTACI</a>
 </nav>
 
 <!-- TOP BAR -->
@@ -48,7 +48,7 @@
             <li><a href="/#works">PROGETTI</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/#aboutus" style="color:#00a9e6"><div class="a2a-title"></div></a></li>
-            <li style="border-right: 1px solid #01A9E6; padding-right: 20px;"><a href="/#contact">Contatti</a></li>
+            <li style="border-right: 1px solid #01A9E6; padding-right: 20px;"><a href="/#contact">Contattaci</a></li>
             <li id="menu-is-logged">
                 <a href="#search"><i class="fa fa-search" aria-hidden="true" style="color:#009FDC"></i></a>
             </li>

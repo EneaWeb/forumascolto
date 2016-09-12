@@ -25,6 +25,7 @@
         <ul>
             <li><a href="/admin/proposals"><span class="fa fa-table"></span>Tutte le proposte</a></li>
             <li><a href="/admin/proposals/da-vedere"><span class="fa fa-table"></span>Da Vedere</a></li>
+            <li><a href="/admin/proposals/da-confermare"><span class="fa fa-table"></span>Da Confermare</a></li>
             <li><a href="/admin/proposals/approvate"><span class="fa fa-table"></span>Approvate</a></li>
             <li><a href="/admin/proposals/non-approvate"><span class="fa fa-table"></span>Non Approvate</a></li>
         </ul>

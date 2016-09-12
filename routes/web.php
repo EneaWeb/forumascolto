@@ -1,6 +1,20 @@
 <?php
 
+
+// staff@forumascoltoa2a.eu
+// f0rum424staff
+
+// a2a@forumascoltoa2a.eu
+// f0rum424424
+
 Route::get('/', 'ProposalController@homepage');
+
+
+
+Route::get('testmail', function(){
+	\App\MyMail::proposal_sent(\App\Proposal::first());
+});
+
 
 Route::get('/privacy', 'PageController@privacy');
 Route::get('/regolamento', 'PageController@regolamento');
@@ -13,13 +27,15 @@ Route::get('/news', 'PostController@index');
 Route::get('/news/{id}', 'BlogController@from_id');
 Route::get('/form-upload', function() { return redirect('/'); });
 Route::get('/proposta-preview/{id}', 'ProposalController@preview');
-Route::get('/admin', 'PostController@lists');
+Route::get('/admin', 'ProposalController@lists');
 Route::get('/admin/posts', 'PostController@lists');
 Route::get('/admin/proposals', 'ProposalController@lists');
 Route::get('/admin/proposals/da-vedere', 'ProposalController@da_vedere');
 Route::get('/admin/proposals/approvate', 'ProposalController@approvate');
+Route::get('/admin/proposals/da-confermare', 'ProposalController@da_confermare');
 Route::get('/admin/proposals/non-approvate', 'ProposalController@non_approvate');
 Route::get('/admin/proposals/confirm/{id}', 'ProposalController@confirm');
+Route::get('/admin/proposals/request/{id}', 'ProposalController@request_validation');
 Route::get('/admin/proposals/deactivate/{id}', 'ProposalController@deactivate');
 Route::get('/admin/users', 'UserController@lists');
 Route::get('/progetti', 'ProposalController@index');
@@ -45,12 +61,15 @@ Route::post('search-form', 'ProposalController@search');
 Route::post('/admin/post/edit', 'PostController@edit');
 Route::post('/modals/edit-post', 'PostController@modal');
 Route::post('/modals/show-proposal', 'ProposalController@modal');
+Route::post('/modals/edit-proposal', 'ProposalController@modal_edit');
+Route::post('/edit-proposal', 'ProposalController@edit_proposal');
 Route::post('/login', 'Auth\LoginController@ajax_login');
 Route::post('/form-upload', 'ProposalController@upload');
 Route::post('/facebook-login', 'Auth\LoginController@facebook_login');
 Route::post('/contact-form/send', 'MailController@contact_form');
 Route::post('/admin/posts/create', 'PostController@create');
 Route::post('/get-subtypes', 'TypeController@get_subtypes');
+Route::post('/get-subtypes-select', 'TypeController@get_subtypes_select');
 
 	Route::post('/minimize-maximize', function()
 	{ // menu minimize-maximize session variable

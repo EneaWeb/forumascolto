@@ -157,6 +157,12 @@ class ProposalController extends Controller
 		$proposals = Proposal::where('status', 'approvata')->get();
 		return view('backend.proposals', compact('proposals'));
 	}
+
+	public function da_confermare()
+	{
+		$proposals = Proposal::where('status', 'da verificare')->get();
+		return view('backend.proposals', compact('proposals'));
+	}
 	
 	public function non_approvate()
 	{
@@ -170,6 +176,18 @@ class ProposalController extends Controller
 		return view('frontend.proposal-preview', compact('proposal'));
 	}
 	
+	public function request_validation($id)
+	{
+		if (!Auth::check())
+			return redirect('/');
+		
+		$proposal = Proposal::find($id);
+		$proposal->status = 'da confermare';
+		$proposal->save();
+		Alert::success('Status modificato con successo');
+		return redirect()->back();
+	}
+
 	public function confirm($id)
 	{
 		if (!Auth::check())
@@ -178,6 +196,9 @@ class ProposalController extends Controller
 		$proposal = Proposal::find($id);
 		$proposal->status = 'approvata';
 		$proposal->save();
+
+		$send_mail = \App\MyMail::proposal_confirmed($proposal);
+
 		Alert::success('Status modificato con successo');
 		return redirect()->back();
 	}
@@ -186,6 +207,12 @@ class ProposalController extends Controller
 	{
 		$proposal = Proposal::find(Input::get('id'));
 		return view('backend._modal_show_proposal', compact('proposal'));
+	}
+
+	public function modal_edit()
+	{
+		$proposal = Proposal::find(Input::get('id'));
+		return view('backend._modal_edit_proposal', compact('proposal'));
 	}
 	
 	public function deactivate($id)
@@ -196,6 +223,9 @@ class ProposalController extends Controller
 		$proposal = Proposal::find($id);
 		$proposal->status = 'non approvata';
 		$proposal->save();
+
+		$send_mail = \App\MyMail::proposal_denied($proposal);
+
 		Alert::success('Status modificato con successo');
 		return redirect()->back();
 	}
@@ -254,7 +284,41 @@ class ProposalController extends Controller
 		// save the line
 		$proposal->save();
 		
+		$send_mail = \App\MyMail::proposal_sent($proposal);
+
 		Alert::success('La tua proposta è stata correttamente registrata e verrà pubblicata quanto prima dopo le operazioni di verifica.');
+		return redirect()->back();
+	}
+
+	public function edit_proposal()
+	{
+		$proposal = Proposal::find(Input::get('proposal_id'));
+		$proposal->type_id = Input::get('type');
+		$proposal->title = Input::get('title');
+		$proposal->subtype_id = Input::get('subtype');
+		$proposal->description_short = Input::get('description_short');
+		$proposal->description_long = Input::get('description_long');
+		$proposal->save();
+		
+		// manage image file
+		if (Input::hasFile('picture'))
+		{
+			$imageFullName = trim($proposal->id.
+									'-'.str_random(4).
+									'-'.Input::file('picture')->getClientOriginalName());
+			
+			Image::make(Input::file('picture'))->resize(838, null, function ($constraint) {
+			    $constraint->aspectRatio();
+			    $constraint->upsize();
+			})->save(base_path().'/public/uploads/proposals/'.$imageFullName);
+			
+			$proposal->picture = $imageFullName;
+		}
+
+		// save the line
+		$proposal->save();
+		
+		Alert::success('Proposta aggiornata correttamente.');
 		return redirect()->back();
 	}
 	

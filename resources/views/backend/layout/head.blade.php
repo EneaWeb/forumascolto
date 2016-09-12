@@ -36,6 +36,9 @@
     
     {{ HTML::script('/assets/js/plugins/morris/raphael-min.js') }}
     {{ HTML::script('/assets/js/plugins/morris/morris.min.js') }}
+    {{HTML::style('/css/summernote.css')}}
+{{HTML::script('/js/summernote.min.js')}}
+{{HTML::script('/js/lang/summernote-it-IT.js')}}
 
     @include('components.alerts')
     

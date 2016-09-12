@@ -19,4 +19,16 @@ class TypeController extends Controller
 		
 		return $result;
 	}
+
+	public function get_subtypes_select()
+	{
+		$type_id = Input::get('type_id');
+		$result = '';
+		foreach (Type::find($type_id)->subtypes()->get() as $subtype) {
+			$result .= '<option value="'.$subtype->id.'">'.$subtype->name.'</option> ';
+		}
+		
+		return $result;
+	}
+
 }
