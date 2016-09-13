@@ -9,7 +9,7 @@
       <div class="section-header">
         
         <!-- SECTION TITLE -->
-        <h2 class="">CONTATTI</h2>
+        <h2 class="">CONTATTACI</h2>
         
     <!-- / END SUBSCRIPTION FORM -->
     </div>

@@ -64,23 +64,9 @@
              <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3" aria-expanded="false" style="height: 0px;">
                  <div class="panel-body" style="text-align:left; margin-left:30px">
                      <p>
-                        <ol>
-                            <li>1 - Le proposte presentate avranno l’obiettivo di migliorare la città e migliorare la qualità della vita dei cittadini della città metropolitana di Milano
-                            </li>
-                            
-                            <li>I temi su cui focalizzare le proposte saranno quelli del Piano di Sostenibilità di A2A (#efficienzaenergetica; #ariapulita;#economiacircolare; #riciclo;#raccoltadifferenziata; #smartcity;#innovazionesociale etc) e relativi ai quattro ambiti su cui A2A ha la possibilità di intervenire anche collaborando con altri attori del Territorio:<br><br>
-                            <ul>
-                            <li>Percorso di decarbonizzazione c contribuire al raggiungimento degli obiettivi nazionali e comunitari di riduzione delle emissioni di gas effetto serra</li>
-                            <li>Economia Circolare c Gestire in modo sostenibile i rifiuti durante il loro ciclo di vita</li>
-                            <li>Smartness nelle reti e nei servizi c accrescere l’affidabilità delle reti mediante l’innovazione tecnologica</li>
-                            <li>People Innovation c Contribuire attivamente al benessere delle comunità e al miglioramento delle condizioni di lavoro</li>
-                            </ul>
-
-                            </li>
-                            
-                            <li>3 - I progetti dovranno “creare valore condiviso” cioè portare un vantaggio “visibile” e “vivibile” sia per i cittadini dell’area metropolitana di Milano che per A2A. 
-                            </li>
-                        </ol>
+                        Le proposte presentate avranno l’obiettivo di migliorare la città e migliorare la qualità della vita dei cittadini della città metropolitana di Milano. 
+                         I temi su cui focalizzare le proposte saranno quelli del <strong>Piano di Sostenibilità</strong> di A2A (<i>#efficienzaenergetica; #ariapulita; #economiacircolare; #riciclo;#raccoltadifferenziata; #smartcity; #innovazionesociale etc</i>) e relativi ai quattro ambiti su cui A2A ha la possibilità di intervenire anche collaborando con altri attori del Territorio.<br><br>
+                        I progetti dovranno “creare valore condiviso” cioè portare un vantaggio “visibile” e “vivibile” sia per i cittadini dell’area metropolitana di Milano che per A2A.
                      </p>
                  </div>
              </div>
@@ -95,24 +81,6 @@
                  </h4>
              </div>
              <div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4" aria-expanded="false" style="height: 0px;">
-                 <div class="panel-body" style="text-align:left; margin-left:30px">
-                     <p>
-                        Le proposte presentate avranno l’obiettivo di migliorare la città e migliorare la qualità della vita dei cittadini della città metropolitana di Milano. I temi su cui focalizzare le proposte saranno quelli del Piano di Sostenibilità di A2A (#efficienzaenergetica; #ariapulita;#economiacircolare; #riciclo;#raccoltadifferenziata; #smartcity;#innovazionesociale, etc) e relativi ai quattro ambiti su cui A2A ha la possibilità di intervenire anche collaborando con altri attori del Territorio.<br><br>
-                        I progetti dovranno “creare valore condiviso” cioè portare un vantaggio “visibile” e “vivibile” sia per i cittadini dell’area metropolitana di Milano che per A2A.
-                     </p>
-                 </div>
-             </div>
-        </div>
-                
-        <div class="panel panel-default">
-             <div class="panel-heading" role="tab" id="heading-4">
-                 <h4 class="panel-title" style="text-transform:uppercase; font-family:'Montserrat', 'sans-serif';">
-                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5" class="collapsed">
-                         <span class="vertical-align-center" >#5</span> Come avviene la valutazione e la selezione delle proposte?
-                     </a>
-                 </h4>
-             </div>
-             <div id="collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4" aria-expanded="false" style="height: 0px;">
                  <div class="panel-body" style="text-align:left; margin-left:30px">
                      <p>
                         Le aree di riferimento delle proposte che ciascun cittadino può caricare sono:
@@ -142,6 +110,22 @@
                         </div>
                         <br>
                      </p>
+                 </div>
+             </div>
+        </div>
+                
+        <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="heading-4">
+                 <h4 class="panel-title" style="text-transform:uppercase; font-family:'Montserrat', 'sans-serif';">
+                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5" class="collapsed">
+                         <span class="vertical-align-center" >#5</span> Come avviene la valutazione e la selezione delle proposte?
+                     </a>
+                 </h4>
+             </div>
+             <div id="collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4" aria-expanded="false" style="height: 0px;">
+                 <div class="panel-body" style="text-align:left; margin-left:30px">
+                    <p>A2A con l’iniziativa del forumAscolto si impegna a prendere in considerazione le proposte presentate dai cittadini attraverso un processo trasparente che coinvolge gli stessi cittadini (attraverso la votazione e la condivisione delle proposte) e i vertici dell’azienda.</p><br>Le proposte che ricevono più “like” saranno valutate da A2A su una serie di criteri (es. creazione di valore per i cittadini e per l’azienda, allineamento con gli obiettivi e i temi del Piano di Sostenibilità). Le proposte selezionate saranno oggetto di un piano di lavoro e sul sito nella sezione “Resta aggiornato” sarà possibile monitorarne l’avanzamento.
+
                  </div>
              </div>
         </div>
