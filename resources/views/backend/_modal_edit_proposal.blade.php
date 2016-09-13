@@ -67,6 +67,9 @@
                         {!!$proposal->description_long!!}
                         </textarea>
                     </div>
+                    <div class="form-group">
+                        {!!Form::submit('Salva')!!}
+                    </div>
                 </div>
             {!!Form::close()!!}
 
