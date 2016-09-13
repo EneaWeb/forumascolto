@@ -68,7 +68,7 @@
                         </textarea>
                     </div>
                     <div class="form-group">
-                        {!!Form::submit('Salva')!!}
+                        {!!Form::submit('Salva', ['class'=>'btn btn-main'])!!}
                     </div>
                 </div>
             {!!Form::close()!!}
