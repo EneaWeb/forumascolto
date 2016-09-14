@@ -1835,3 +1835,9 @@ h3.fs-title {
 	border-radius:30px;
 	margin-left:6px;
 }
+
+@media all and (max-width:600px) {
+	#facebooklike {
+		display:none!important;
+	}
+}
