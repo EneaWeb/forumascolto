@@ -126,14 +126,14 @@
         Corso di Porta Vittoria, 4 - 20122 MILANO. Tel. 02 77201 - Fax 02 77203920. <a href="http://www.a2a.eu/gruppo/cms/a2a/it/societa/dove_siamo/sedi/milano.html">Come raggiungerci</a>.
     </div>
     <br><br><br>
-    <div id="youtube-video">
-       <iframe width="640" height="360" src="https://www.youtube.com/embed/nAZ8tCSdQgw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <div id="youtube-video" style="max-width:700px; margin-left:auto; margin-right:auto;">
+       <iframe width="640" height="360" src="//www.youtube.com/embed/nAZ8tCSdQgw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <script>
         $(function() {
 
             var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
-            $fluidEl = $("figure");
+            $fluidEl = $("#youtube-video");
 
             $allVideos.each(function() {
 

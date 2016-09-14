@@ -187,9 +187,10 @@ background-position: left top;
 				<fieldset>
 					<span class="form-badge">4</span>
 					<h3 class="fs-title">
-						Inserisci una <span class="colored-blue">immagine</span>
+						Inserisci una <span class="colored-blue">immagine</span>*
 					</h3>
 					<h3 class="fs-subtitle">
+						* facoltativo.<br>
 						Formati di file accettati: JPG, PNG, GIF.
 						<span style="color:#D40000; display:none;" id="error-picture" >
 							<br>Formato file non valido.<br>

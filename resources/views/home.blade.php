@@ -23,7 +23,7 @@
     
     @include('home-sections.contact-us')
 
-    @include('components.like-button')
+    {{-- @include('components.like-button') --}}
 
 @stop
 

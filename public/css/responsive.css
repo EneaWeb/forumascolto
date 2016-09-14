@@ -9,7 +9,8 @@
     
     /* TOP BAR ELEMENTS */    
 	.responsive-logo {
-		width: 100%;
+
+
 		position: relative;
 		text-align: center;
 		margin-top: 10px;
@@ -27,7 +28,8 @@
 
 	.responsive-nav li {
 		margin-bottom: 15px;
-		margin-top: 0 !important;
+		margin-top: 24px !important;
+
 	}
 
 	.navbar-brand {
@@ -273,5 +275,12 @@
 
 	.client-list ul li {
 		display: block;
+	}
+}
+
+@media (min-width: 768px) and (max-width:920px) {
+	.navbar>.container .navbar-brand {
+		margin-left:0;
+		margin-top:0; padding-top:0;
 	}
 }

@@ -79,7 +79,7 @@
                 <i class="pixeden pd-icon-check"></i>
             </div>
             <h5 class="blue-border-bottom">FASE 5</h5>
-            <br><h5 class="red-border-bottom"><a href="/">Resta aggiornato</a><br><br></h5> <!-- FOCUS HEADING -->
+            <br><h5 class="red-border-bottom">Resta aggiornato<br><br></h5> <!-- FOCUS HEADING -->
             <p>
                Qui trovi i progetti che abbiamo ideato con i cittadini di altre città in cui opera A2A, quelli che abbiamo realizzato e quelli che vogliamo realizzare in futuro.
             </p>

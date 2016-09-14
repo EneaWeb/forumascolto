@@ -24,11 +24,12 @@
     <a href="/#works">PROGETTI</a>
     <a href="/#faq">FAQ</a>
     <a href="/#contact">CONTATTI</a>
+    <a href="http://facebook.com/A2AEnergia">SEGUICI SU &nbsp;<i class="fa fa-facebook" style="color:#4267B2; font-size:1.3em"></i></a>
 </nav>
 
 <!-- TOP BAR -->
 <div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
-    <div class="container">
+    <div class="container container-nav">
         <div class="navbar-header responsive-logo">
             <button class="navbar-toggle collapsed" type="button" id="showRightPush">
                 <span class="sr-only">Toggle navigation</span>
@@ -48,7 +49,8 @@
             <li><a href="/#works">PROGETTI</a></li>
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/#aboutus" style="color:#00a9e6"><div class="a2a-title"></div></a></li>
-            <li style="border-right: 1px solid #01A9E6; padding-right: 20px;"><a href="/#contact">Contatti</a></li>
+            <li><a href="/#contact">Contatti</a></li>
+            <li style="border-right: 1px solid #01A9E6; padding-right: 20px;"><a href="http://facebook.com/A2AEnergia">SEGUICI SU &nbsp;<i class="fa fa-facebook" style="color:#4267B2; font-size:1.3em"></i></a></li>
             <li id="menu-is-logged">
                 <a href="#search"><i class="fa fa-search" aria-hidden="true" style="color:#009FDC"></i></a>
             </li>
