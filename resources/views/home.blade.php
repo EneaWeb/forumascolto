@@ -66,7 +66,7 @@
                COUNTDOWN CUSTOM SCRIPTS 
        ======================================*/
         setInterval(function () {
-            var enddate = new Date("Nov 16 2016 18:00:00 GMT+02:00"); // change your date here like Jan 10 2016
+            var enddate = new Date("Nov 15 2016 18:00:00 GMT+02:00"); // change your date here like Jan 10 2016
             var today = new Date();
             var difference = Math.floor((enddate.getTime() - today.getTime()) / 1000);
             var seconds = GlobalFunctn(difference % 60);

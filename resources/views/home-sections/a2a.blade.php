@@ -10,7 +10,7 @@
         
         <!-- SECTION TITLE -->
         <h2 class="white-text" style="text-transform: lowercase;">
-            <a href="http://a2a.eu" target="_blank"><div class="a2a-title" style="width:200px; height:92px; display:inline-block;"></div></a>
+            <a href="http://www.a2a.eu" target="_blank"><div class="a2a-title" style="width:200px; height:92px; display:inline-block;"></div></a>
         </h2>
         
         <!-- SHORT DESCRIPTION ABOUT THE SECTION -->
@@ -26,7 +26,7 @@
         <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
         <div class="col-lg-4 col-md-4 column">
             <div class="big-intro wow fadeInLeft animated" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
-                  <a href="http://a2a.eu" target="_blank"><div class="a2a-title" style="width:140px; height:63px; margin-right:-4px; display:inline-block;"></div></a>
+                  <a href="http://www.a2a.eu" target="_blank"><div class="a2a-title" style="width:140px; height:63px; margin-right:-4px; display:inline-block;"></div></a>
                   <br>per Milano.<br>Da sempre accanto all’evoluzione della città.
             </div>
         </div>

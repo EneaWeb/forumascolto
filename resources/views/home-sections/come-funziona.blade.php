@@ -16,7 +16,7 @@
             <br><br>
             forumAscolto rappresenta la volontà di un “ascolto digitale e fisico” di tutti i cittadini. L’obiettivo è raccogliere idee e proposte di chi vive quotidianamente la città per renderla migliore, più vivibile ed efficiente. In una parola sola: Smart. 
             <br><br>
-            Oltre all’ascolto digitale ci sarà anche un ascolto “reale”: A2A ha organizzato un momento di incontro con i cittadini e gli stakeholder del territorio milanese il 16 Novembre 2016 per raccogliere “ad  alta voce” le proposte che arrivano direttamente dalla città.
+            Oltre all’ascolto digitale ci sarà anche un ascolto “reale”: A2A ha organizzato un momento di incontro con i cittadini e gli stakeholder del territorio milanese il 15 Novembre 2016 per raccogliere “ad  alta voce” le proposte che arrivano direttamente dalla città.
             <br><br>
             Potrai partecipare fisicamente al forumAscolto di Novembre a Milano. Alcune delle idee più votate dai cittadini, dopo esser state valutate da A2A, verranno presentate nel corso del forumAscolto. 
             <br><br>
@@ -59,7 +59,7 @@
             <h5 class="blue-border-bottom">FASE 3</h5>
             <br><h5 class="red-border-bottom">Vota e commenta le proposta</h5> <!-- FOCUS HEADING -->
             <p>
-                Da idea nasce idea! Puoi votare quelle che più ti piacciono, arricchire e commentare quelle già esistenti con i tuoi contributi. Puoi anche condividere le proposte su facebook!
+                Da idea nasce idea! Puoi votare quelle che più ti piacciono, arricchire e commentare quelle già esistenti con i tuoi contributi. Puoi anche condividere le proposte su Facebook!
             </p>
         </div>
         
