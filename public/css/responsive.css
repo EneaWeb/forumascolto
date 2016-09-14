@@ -284,3 +284,7 @@
 		margin-top:0; padding-top:0;
 	}
 }
+
+	.navbar>.container .navbar-brand {
+		margin-left:0;
+		}
