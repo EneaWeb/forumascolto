@@ -50,7 +50,7 @@
             <li><a href="/#faq">FAQ</a></li>
             <li><a href="/#aboutus" style="color:#00a9e6"><div class="a2a-title"></div></a></li>
             <li><a href="/#contact">Contatti</a></li>
-            <li style="border-right: 1px solid #01A9E6; padding-right: 20px;"><a href="http://facebook.com/A2AEnergia">SEGUICI SU &nbsp;<i class="fa fa-facebook" style="color:#4267B2; font-size:1.3em"></i></a></li>
+            <li style="border-right: 1px solid #01A9E6; padding-right: 20px;"><a href="http://facebook.com/GruppoA2A">SEGUICI SU &nbsp;<i class="fa fa-facebook" style="color:#4267B2; font-size:1.3em"></i></a></li>
             <li id="menu-is-logged">
                 <a href="#search"><i class="fa fa-search" aria-hidden="true" style="color:#009FDC"></i></a>
             </li>

@@ -7,22 +7,22 @@
 	</a>
 </div>
 <div style="display:inline-block; float:left; margin-right:4px; margin-bottom:30px">
-	<a href="www.amsa.it" target="_blank">
+	<a href="http://www.amsa.it" target="_blank">
 		<img src="/images/footer/amsa.png" style="max-height:50px;"/>
 	</a>
 </div>
 <div style="display:inline-block; float:left; margin-right:4px; margin-bottom:30px">
-	<a href="www.a2aenergia.eu" target="_blank">
+	<a href="http://www.a2aenergia.eu" target="_blank">
 		<img src="/images/footer/a2a_energia.png" style="max-height:50px;"/>
 	</a>
 </div>
 <div style="display:inline-block; float:left; margin-right:4px; margin-bottom:30px">
-	<a href="www.a2acaloreservizi.eu" target="_blank">
+	<a href="http://www.a2acaloreservizi.eu" target="_blank">
 		<img src="/images/footer/a2a_cal_serv.png" style="max-height:50px;"/>
 	</a>
 </div>
 <div style="display:inline-block; float:left; margin-right:4px; margin-bottom:30px">
-	<a href="www.unareti.it" target="_blank">
+	<a href="http://www.unareti.it" target="_blank">
 		<img src="/images/footer/unareti.png" style="max-height:50px;"/>
 	</a>
 </div>
