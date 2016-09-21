@@ -72,8 +72,8 @@
             <div class="row">
                <div class="col-xs-12">
                <div class="well">      
-
-                     {!!Form::open(['method'=>'POST', 'url'=>'/registration', 'novalidate'=>'novalidate', 'autocomplete'=>'off'])!!}
+                      
+                     {!!Form::open(['method'=>'POST', 'url'=>'/registration', 'novalidate'=>'novalidate', 'autocomplete'=>'off', 'id'=>'reg-form'])!!}
                         <div class="form-group">
                            {!!Form::text('name', '', ['placeholder'=>'Nome', 'id'=>'', 'class'=>'form-control'])!!}
                         </div>
@@ -112,7 +112,7 @@
                               <button type="button" class="btn btn-primary custom-button red-btn" data-toggle="modal" data-target="#modal-login" data-dismiss="modal" style="border:3px solid #01A9E6; background-color:inherit; color:#01A9E6; padding:10px; width:100%; margin:6px 0px;">Accedi</button>
                            </div>
                            <div class="col-md-6">
-                              <button type="submit" class="btn btn-primary custom-button red-btn" id="login-submit-button" style="width:100%; border:3px solid #01A9E6; color:#FFFFFF">Registrati</button>
+                              <button type="submit" class="btn btn-primary custom-button red-btn" id="register-submit-button" style="width:100%; border:3px solid #01A9E6; color:#FFFFFF">Registrati</button>
                            </div>
                         </div>
                         <div class="clearfix"></div>
@@ -129,7 +129,12 @@
 </div>
 
    <style>
+
+   .warning {
+    border: 1px solid #D20000;
+   }
       #login-submit-button,
+      #register-submit-button,
       #registration-button,
       #fb-login-button {
         margin:6px 0px;
@@ -149,6 +154,38 @@
   </style>
 
   <script>
+
+  $('#reg-form input').blur(function() {
+    if ( $(this).val().length == 0 ) {
+      $(this).addClass('warning');
+    } else {
+      $(this).removeClass('warning');
+    }
+  });
+
+  $('#reg-form input').hover(function() {
+
+    var check = false;
+    $('#reg-form input').not(':button,:hidden').each(function() {
+        if ($(this).val().length !== 0) {
+          check = true;
+        }
+    });
+
+    $('#reg-form input').not(':button,:hidden,:checkbox').each(function() {
+        if ($(this).val().length == 0) {
+          check = false;
+        }
+    });
+
+    console.log(check);
+
+    if (!check) {
+        $('#register-submit-button').attr('disabled', 'disabled');
+    } else {
+        $('#register-submit-button').removeAttr('disabled');
+    }
+  });
 
    $('.launch-modal-login').on('click', function(e){
 
